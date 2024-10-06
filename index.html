@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neo4j Graph Visualization</title>
+  <style>
+    #graph {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #ccc;
+    }
+    #relationshipInfo {
+      width: 300px;
+      height: 150px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Neo4j Graph</h1>
+
+
+<div id="graph"></div>
+
+Node 1 Name: <input type="text" id="node1Input" list="nodeSuggestions1">
+<datalist id="nodeSuggestions1"></datalist> <br>
+
+Node 2 Name: <input type="text" id="node2Input" list="nodeSuggestions2">
+<datalist id="nodeSuggestions2"></datalist> <br> <br>
+
+<button id="findRelationshipsButton">Find Relationships</button>
+
+<div id="relationshipInfo"></div>
+<script src="https://unpkg.com/neo4j-driver"></script>
+
+<script src="https://unpkg.com/neovis.js@^1/dist/neovis.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

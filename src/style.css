@@ -1,0 +1,30 @@
+#graph {
+    width: 800px;
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
+#relationshipInfo {
+    width: 300px;
+    height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background: white;
+    position: absolute;
+    z-index: 9999;
+}
+
+.autocomplete-suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #ddd;
+}
